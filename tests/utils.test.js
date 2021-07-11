@@ -54,20 +54,11 @@ it("should return the area of a circle", function() {
 // ========================================================
 
 beforeEach((done) => {
-  utils.clearCart()
-  done()
-})
   utils.clearCart();
   done();
 });
 
 it("Should create a new (object) Item with name and price", function() {
-  const item = utils.createItem("apple", 0.99)
-  expect(item).to.be.a("object")
-  expect(item).to.have.property("name", "apple")
-  expect(item).to.have.property("price", 0.99)
-  expect(item).to.have.property("quantity", 1)
-})
   const item = utils.createItem("apple", 0.99);
   expect(item).to.be.a("object");
   expect(item).to.have.property("name", "apple");
